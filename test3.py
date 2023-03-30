@@ -12,45 +12,45 @@ def test3():
     driver.get('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login')
     logger.log(3, 'Enter the site -www.globalsqa.com-')
     driver.fullscreen_window()
-    logger.log(3, 'fullscreen')
+    logger.info('fullscreen')
     time.sleep(2)
 
 
     meneger = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[1]/div[2]/button')
     meneger.click()
-    logger.log(3, 'Click on bank manager login')
+    logger.info('Click on bank manager login')
     time.sleep(2)
 
     add = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[1]/button[1]')
     add.click()
-    logger.log(3, 'Click on add customers')
+    logger.info('Click on add customers')
     time.sleep(2)
 
     last = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[2]/div/div/form/div[2]/input')
     last.click()
-    logger.log(3, 'Click on text box last name')
+    logger.info('Click on text box last name')
     time.sleep(2)
 
     lastname = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[2]/div/div/form/div[2]/input')
     lastname.send_keys('Rahanaev')
-    logger.log(3, 'enter Rahanaev')
+    logger.info('enter Rahanaev')
     time.sleep(2)
 
     code = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[2]/div/div/form/div[3]/input')
     code.click()
-    logger.log(3, 'Click on text box post code')
+    logger.info('Click on text box post code')
     time.sleep(2)
 
     code = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[2]/div/div/form/div[3]/input')
     code.send_keys('80100')
-    logger.log(3, 'enter 80100')
+    logger.info('enter 80100')
     time.sleep(2)
 
     meneger = driver.find_element(By.XPATH, '/html/body/div/div/div[2]/div/div[2]/div/div/form/button')
     meneger.click()
-    logger.log(3, 'Click on add customers')
+    logger.info('Click on add customers')
     driver.save_screenshot('the test result.png')
-    logger.log(3, 'take screenshot')
+    logger.info('take screenshot')
     time.sleep(2)
 
     try:
